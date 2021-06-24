@@ -11,9 +11,11 @@ import oracle.jdbc.pool.OracleConnectionPoolDataSource;
  * created on 24-June-2021
  */
 public class DBUtils {
-	static OracleConnectionPoolDataSource dataSource = null;
+	private static OracleConnectionPoolDataSource dataSource = null;
+	private DBUtils() {
+		
+	}
 	static {		
-			OracleConnectionPoolDataSource dataSource;
 			try {
 				dataSource = new OracleConnectionPoolDataSource();
 				dataSource.setURL(DBConstants.URL);
