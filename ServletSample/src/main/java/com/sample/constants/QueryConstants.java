@@ -9,4 +9,6 @@ public class QueryConstants {
 			+ "("+TableConstants.USER_MASTER_EMAIL+","+TableConstants.USER_MASTER_USERNAME+""
 					+ ","+TableConstants.USER_MASTER_PHONE+","+TableConstants.USER_MASTER_PASSWORD+")"
 							+ "VALUES(?,?,?,?)";
+	
+	public static String getCaseCount = "SELECT "+TableConstants.MONTH_VALUES+","+TableConstants.CASE_COUNT+" FROM "+TableConstants.COVID_DATA;
 }
